@@ -13,11 +13,11 @@
         <div class="menu-button">
             <p>Menu</p>
         </div>
-
         <div class="menu-button2">
       
-        <a href="#bookings"><div class="menu-button2"><p class="menu-button2">Disponibilidad</p></div></a>
-</div>
+            <a href="#bookings"><div class="menu-button2"><p class="menu-button2">Disponibilidad</p></div></a>
+    </div>
+        
         <div class="dropdown">
             <a href="#home"><div class="menu-parts"><p class="text-menu">Inicio</p></div></a>
             <a href="#complete-container-reviews"><div class="menu-parts"><p class="text-menu">Opiniones</p></div></a>
@@ -114,14 +114,20 @@
         <img src="tu-imagen-2.jpg" alt="La Masía">
     </div></a>
 
+    <div class="project" id="popup-trigger">
+        <div class="project-overlay">
+            <h3>Galeria</h3>
+        </div>
+        <img src="tu-imagen-6.jpg" alt="Galeria">
+    </div>
 
     <div class="project">
-        <a href="historia-masia.html">
+        
         <div class="project-overlay">
-            <h3>Historia</h3>
+            <h3>Actividades</h3>
         </div>
-       <img src="tu-imagen-1.jpg" alt="Historia">
-    </div></a>
+       <img src="actividades.jpg" alt="Historia">
+    </div>
 
 
     <div class="project">
@@ -142,18 +148,13 @@
 
     <div class="project">
         <div class="project-overlay">
-            <h3>Actividades</h3>
+            <h3>Naturaleza</h3>
         </div>
-        <img src="tu-imagen-5.jpg" alt="Actividades">
+        <img src="tu-imagen-5.jpg" alt="Naturaleza">
     </div>
     
 
-    <div class="project" id="popup-trigger">
-        <div class="project-overlay">
-            <h3>Galeria</h3>
-        </div>
-        <img src="tu-imagen-6.jpg" alt="Galeria">
-    </div>
+   
 </div>
 
 
@@ -172,20 +173,18 @@
         <button class="nav-button righty" onclick="moveSlide2(1)">&#10095;</button>
     </div>
 -->
-
+<div id="last3">
 <!--MAP CONTAINER-->
-<div class="map-container">
 
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10069.355335855216!2d2.4400974!3d41.6363346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a50c32e8c13d45%3A0x1ecb3b3c4b84cb3b!2s41.636334563708395%2C%202.440097353771794!5e0!3m2!1ses!2ses!4v1632943549518!5m2!1ses!2ses" 
-        width="350" 
-        height="300" 
-        allowfullscreen=""> <!--yes-->
-    </iframe>
 
-    <p id="direccion"> Masia Paradise " Cal Coix ", s/n, 08450 Collsabadell, Barcelona</p>
+
+<div class="calendar-container">
+            
+    <h2 id="calendar-title">Disponibilidad Octubre</h2>
+       
+       <!--<div id="calendar"></div>-->
+       <iframe class="iframe" src="https://calendar.google.com/calendar/embed?src=themasiaparadise%40gmail.com&ctz=Europe%2FMadrid"></iframe>        </div>
 </div>
-
 
 <!--RESERVATION BOX + CALENDAR DISPONABILITY-->
     <div class="reservation-disponibility-container" id="bookings">
@@ -193,7 +192,7 @@
 
         <div class="reservation">
             <h2>Reserva tu Estancia</h2>
-            <form>
+            <form action="https://formspree.io/f/mdkkpvzz" method="POST">
                 <div class="form-group">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required> <!--name attribute contains the info*-->
@@ -252,15 +251,18 @@
                 <button type="submit">Enviar Reserva</button>
             </form>
         </div>
+        <div class="map-container">
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10069.355335855216!2d2.4400974!3d41.6363346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a50c32e8c13d45%3A0x1ecb3b3c4b84cb3b!2s41.636334563708395%2C%202.440097353771794!5e0!3m2!1ses!2ses!4v1632943549518!5m2!1ses!2ses" 
+                width="200" 
+                height="200" 
+                allowfullscreen=""> <!--yes-->
+            </iframe>
         
-        <div class="calendar-container">
-            
-         <h2 id="calendar-title">Disponibilidad Octubre</h2>
-            
-            <!--<div id="calendar"></div>-->
-            <iframe src="https://calendar.google.com/calendar/embed?src=themasiaparadise%40gmail.com&ctz=Europe%2FMadrid" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>        </div>
+            <p id="direccion">> Masia Paradise " Cal Coix ", s/n, 08450 Collsabadell, Barcelona</p>
+        </div>
     </div>
-    
 
  <footer>
     <h3 id="contact">Contáctanos</h3>

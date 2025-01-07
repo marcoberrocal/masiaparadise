@@ -1,4 +1,5 @@
 
+
 /*BODY AND HYPERLINKING*/
 body {
     font-family: Arial, sans-serif;
@@ -43,13 +44,13 @@ a {
 
 .menu-button2 {
 
-display: flex;
+
 margin-left: -200px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 color: white;
 font-size: 1em;
 cursor: pointer;
-
+padding: 0 2em;
 
 }
 
@@ -170,7 +171,7 @@ cursor: pointer;
 
 .profile-pic {
     width: 90%; 
-    height: 140%; 
+    height: 110%; 
     object-fit: cover; /*crop and fit in the given space */
     border-radius: 20px;
 }
@@ -251,6 +252,7 @@ cursor: pointer;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
         background-color: rgba(255, 255, 255, 0.612); 
         padding: 20px; 
+        margin-top: -20px;
       
     }
     
@@ -401,9 +403,10 @@ font-size: 40px;
     text-align: center;
     padding: 20px;
     margin-top: -20px;
-    margin-right: -60px;;
+    margin-right: 50px;;
     float: right;
-    width: 40%;
+    width: 20%;
+    height: 25%;
 }
 
 #direccion{
@@ -420,7 +423,9 @@ font-size: 40px;
 .reservation-disponibility-container {
     display: flex; 
     justify-content: space-between; 
-    margin: 20px; 
+    align-items: center;
+    margin: 20px;
+    padding:1em; 
 }
 
 
@@ -428,7 +433,7 @@ font-size: 40px;
     background-color: #f4f4f4; 
     padding: 10px; 
     margin: 20px; 
-    width: 50%; 
+    width: 60%; 
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     position: relative; 
@@ -528,43 +533,23 @@ button:hover {
 .calendar-container {
     width: 40%;
     height: 300px;
-    padding: 10px;
-    margin-left: 80px;
-    margin-top: 30px;
+    padding: 0px;
+    margin-left: 0px;
+   
+    display: flex;
+    float: left;
    
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); 
-    gap: 5px; 
-}
+
 
 #calendar-title{
 text-align: center;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 color: black;
-}
-
-.day {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-
-.day.occupied {
-    background-color: red;
-    color: white;
-}
-
-.day.free {
-    background-color: lightgreen;
+margin-left: 50px;
 }
 
 
@@ -607,66 +592,18 @@ footer {
 
 
 
+/* Generalmente, todo el contenido es visible */
+body {
+    display: block;
+}
+
+/* Para dispositivos móviles o tabletas, ocultamos el contenido */
 @media (max-width: 768px) {
-    /* Menú */
-    .menu-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1em;
-        
-    }
-
-    .menu-button {
-        margin-left: 0;
-        font-size: 1.5em;
-    }
-
-    /* Imagen de perfil */
-    .profile-content {
-        flex-direction: column;
-    }
-
-    .profile-pic {
-        width: 100%;
-        height: 50%;
-    }
-
-    .profile-text {
-        padding: 2em;
-    }
-
-    /* Proyectos */
-    .projects-container {
-        grid-template-columns: 1fr; /* Solo una columna */
-    }
-
-    .reviews-slider {
-        flex-direction: column;
-    }
-
-    /* Slider de revisiones */
-    .review-stars img {
-        width: 80px; /* Ajustar el tamaño de las estrellas */
-    }
-
-    /* Títulos y texto */
-    .profile-text h1 {
-        font-size: 2.2em;
-    }
-
-    .profile-text h3 {
-        font-size: 1em;
-    }
-
-    .title-reviews {
-        font-size: 2em;
-    }
-
-    .review p {
-        font-size: 1.4em;
-  
+    body {
+        display: none;
     }
 }
+
 
 /*BIG SLIDER (NOT WORKING)*/
 /*
@@ -723,3 +660,9 @@ footer {
 }
 
 */
+.iframe{
+
+    margin-left: -15em;
+ width: 100%;
+ height: 170%;
+}

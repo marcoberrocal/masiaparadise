@@ -1,5 +1,4 @@
 
-
 /*BODY AND HYPERLINKING*/
 body {
     font-family: Arial, sans-serif;
@@ -39,7 +38,19 @@ a {
     cursor: pointer;
     padding: 0 2em;
     transition: background-color 0.3s;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-button2 {
+
+display: flex;
+margin-left: -200px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
+font-size: 1em;
+cursor: pointer;
+
+
 }
 
 .menu-button:hover { /*pseudo-class*/
@@ -150,16 +161,16 @@ a {
     display: flex; 
     align-items: center; 
     width: 100%; 
-    margin-bottom: 20px; 
-    margin-top: 20px;
+    margin-bottom: 80px; 
+    margin-top: 80px;
     height: 50vh;
 }
 
 
 
 .profile-pic {
-    width: 50%; 
-    height: 100%; 
+    width: 90%; 
+    height: 140%; 
     object-fit: cover; /*crop and fit in the given space */
     border-radius: 20px;
 }
@@ -167,7 +178,7 @@ a {
 .profile-text {
     position: relative;
     padding: 5em;
-    margin: 40px 20px 20px;
+    margin: 20px 20px 20px;
     height: 200px;
     border-radius: 4em;
     color: #fff;
@@ -334,13 +345,14 @@ a {
 
 .project {
     position: relative;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s; /*transition to size changes*/
     margin: 30px;
 }
 
 .project img {
+    margin-left: 0px;
         width: 100%;
         height: 100%; 
         object-fit: cover; /*crop the image to fit it */
@@ -395,8 +407,10 @@ font-size: 40px;
 }
 
 #direccion{
-    font-size: medium;
+    
     color: #f4f4f4;
+    font-size: 0.8em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -517,7 +531,7 @@ button:hover {
     padding: 10px;
     margin-left: 80px;
     margin-top: 30px;
-    background-color: #f4f4f4;
+   
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -530,6 +544,8 @@ button:hover {
 
 #calendar-title{
 text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: black;
 }
 
 .day {
@@ -561,15 +577,23 @@ footer {
     padding: 20px 0;
 }
 
-.social-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#contact{
+
+    font-size: 1.7em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.social-links li {
+
+.social-links {
+    list-style: none;
+    padding-bottom: 20px;
+    margin: 0;
+    
+}
+
+.social-links li, img {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .social-links a {
@@ -581,6 +605,68 @@ footer {
     text-decoration: underline;
 }
 
+
+
+@media (max-width: 768px) {
+    /* Menú */
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+        
+    }
+
+    .menu-button {
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+
+    /* Imagen de perfil */
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        width: 100%;
+        height: 50%;
+    }
+
+    .profile-text {
+        padding: 2em;
+    }
+
+    /* Proyectos */
+    .projects-container {
+        grid-template-columns: 1fr; /* Solo una columna */
+    }
+
+    .reviews-slider {
+        flex-direction: column;
+    }
+
+    /* Slider de revisiones */
+    .review-stars img {
+        width: 80px; /* Ajustar el tamaño de las estrellas */
+    }
+
+    /* Títulos y texto */
+    .profile-text h1 {
+        font-size: 2.2em;
+    }
+
+    .profile-text h3 {
+        font-size: 1em;
+    }
+
+    .title-reviews {
+        font-size: 2em;
+    }
+
+    .review p {
+        font-size: 1.4em;
+  
+    }
+}
 
 /*BIG SLIDER (NOT WORKING)*/
 /*

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Masia Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="script.js"></script>
+</head>
+
+<div class="menu">
+    <div class="menu-container">
+        
+        <div class="menu-button">
+            <p class="text-menu">Menu</p>
+        </div>
+       
+        <div class="dropdown">
+            <a href="#home"><div class="menu-parts"><p class="text-menu">Home</p></div></a>
+            <a href="#reviews"><div class="menu-parts"><p class="text-menu">Reviews</p></div></a>
+            <a href="#features"><div class="menu-parts"><p class="text-menu">Features</p></div></a>
+            <a href="#bookings"><div class="menu-parts"><p class="text-menu">Bookings</p></div></a>
+            <a href="#contact"> <div class="menu-parts"><p class="text-menu">Contact</p></div></a>
+        </div>
+
+        <!-- Aquí añadimos la imagen alineada a la derecha -->
+        <div class="menu-languages">
+            <a href="webPage.html"><img id="spain" src="spain.jpg" alt="Spain"></a>
+            <a href="webPageENG.html"><img id="uk" src="uk.jpg" alt="UK"></a>
+        </div>
+
+    </div>
+</div>
+
+        
+    </div> 
+
+    
+</div>
+
+
+    <div class="hero">
+        <img src="banner.jpg" alt="Hero Image" class="banner">
+        <div class="overlay">
+            <h1>Masia Paradise</h1>
+            <p>The vacation you deserve.</p>
+        </div>
+    </div>
+    
+    <div class="profile" id="home">
+        <div class="profile-content">
+            <img src="sala.jpg" alt="Room" class="profile-pic">
+            <div class="profile-text" id="profile-text-1">
+                <h1>What is Masia Paradise?</h1>
+                <h3>
+                    This incredible traditional house is located in the heart of the Spanish forest, 
+                    just 30 minutes from the center of Barcelona. Surrounded by lush greenery and the 
+                    serene sounds of nature, it offers a peaceful retreat for those looking to escape 
+                    the hustle and bustle of city life. Perfect for enjoying nature and disconnecting 
+                    from daily stress, the house provides a unique blend of rustic charm and modern comfort.
+                </h3>
+            </div>
+        </div>
+        
+        <div class="profile-content reversed">
+            <div class="profile-text" id="profile-text-2">
+                <h1>Why us?</h1>
+                <h3>
+                    Our commitment to sustainability sets us apart, 
+                    as we prioritize eco-friendly practices to preserve 
+                    the natural beauty surrounding us. By choosing us, 
+                    you're not just enjoying a unique getaway; you're 
+                    also supporting responsible tourism. Join us in making a positive impact on the environment while you relax and rejuvenate!
+                </h3>
+            </div>
+            <img src="pool.jpg" alt="Pool" class="profile-pic">
+        </div>
+    </div>
+    
+    
+<div id="color-reviews">
+    <div class="title-reviews"><h2 id="tituloResenas">Guest Reviews</h2></div>
+    <div class="reviews-container" >
+    
+        <div class="reviews-slider">
+            <div class="review active">               
+                <p>"The house is amazing, perfect to disconnect."</p>
+                <span>- Juan Pérez</span>
+                <span class="review-stars"><img src="stars.png" alt="Stars"></span>
+            </div>
+            <div class="review">
+                <p>"We had a wonderful vacation, although it's a bit tricky to find the indicated address."</p>
+                <span>- Ana Gómez</span>
+                <span class="review-stars2"><img src="stars2.png" alt="Stars"></span>
+            </div>
+            <div class="review">
+                <p>"A magical place, surrounded by nature."</p>
+                <span>- Carlos Martínez</span>
+                <span class="review-stars"><img src="stars.png" alt="Stars"></span>
+            </div>
+        </div>
+        <button class="nav-button left" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="nav-button right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
+    
+<div class="projects-container" id="features">
+    <div class="project">
+        <a href="history-masia.html">
+        <div class="project-overlay" id="la-masia">
+        <h3>The Masia</h3>
+    </div>
+        <img src="tu-imagen-2.jpg" alt="The Masia">
+    </div></a>
+    <div class="project">
+        <a href="history-masia.html">
+        <div class="project-overlay">
+            <h3>History</h3>
+        </div>
+       <img src="tu-imagen-1.jpg" alt="History">
+    </div></a>
+    <div class="project">
+        <div class="project-overlay">
+            <h3>Events</h3>
+        </div>
+        <img src="tu-imagen-3.jpg" alt="Events">
+    </div>
+    <div class="project">
+        <div class="project-overlay">
+            <h3>Exteriors</h3>
+        </div>
+        <img src="tu-imagen-4.jpg" alt="Exteriors">
+    </div>
+    <div class="project">
+        <div class="project-overlay">
+            <h3>Activities</h3>
+        </div>
+        <img src="tu-imagen-5.jpg" alt="Activities">
+    </div>
+    
+    <div class="project" id="popup-trigger">
+        <div class="project-overlay">
+            <h3>Gallery</h3>
+        </div>
+        <img src="tu-imagen-6.jpg" alt="Gallery">
+    </div>
+</div>
+
+<!-- SLIDER POPUP NOT WORKING -->
+<div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div class="slider">
+        <img src="foto1.jpg" alt="Image 1">
+        <img src="foto2.jpg" alt="Image 2">
+        <img src="foto3.jpg" alt="Image 3">
+       
+    </div>
+    <button class="nav-button left" onclick="moveSlide2(-1)">&#10094;</button>
+    <button class="nav-button right" onclick="moveSlide2(1)">&#10095;</button>
+</div>
+
+
+<div class="map-container">
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10069.355335855216!2d2.4400974!3d41.6363346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a50c32e8c13d45%3A0x1ecb3b3c4b84cb3b!2s41.636334563708395%2C%202.440097353771794!5e0!3m2!1ses!2ses!4v1632943549518!5m2!1ses!2ses" 
+        width="500" 
+        height="400" 
+        allowfullscreen="">
+    </iframe>
+    <h3 id="direccion">Carrer de la Masia, 1, 08120, La Roca del Vallès, Spain<h3>
+</div>
+
+
+
+    <div class="reservation-container" id="bookings">
+        <div class="reservation">
+            <h2>Book Your Stay</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Occupancy Dates:</label>
+                    <div class="date-selection">
+                        <div class="date-box">
+                            <label for="start-date">Start Date:</label>
+                            <input type="date" id="start-date" name="start-date">
+                        </div>
+                        <div class="date-box">
+                            <label for="end-date">End Date:</label>
+                            <input type="date" id="end-date" name="end-date">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Guests:</label>
+                    <br><br>
+                    <div class="group-quantities">
+                        <div class="quantity-box">
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="adults" name="adults" min="0" value="0">
+                        </div>
+                        <div class="quantity-box">
+                            <label for="children">Children:</label>
+                            <input type="number" id="children" name="children" min="0" value="0">
+                        </div>
+                        <div class="quantity-box">
+                            <label for="babies">Babies:</label>
+                            <input type="number" id="babies" name="babies" min="0" value="0">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="calendar-container">
+            
+            <h2 id="calendar-title">Disponibilidad Octubre</h2>
+               
+               <div id="calendar"></div>
+           </div>
+    </div>
+    
+
+
+    
+<footer id="contact">
+    <p>Masia Paradise</p>
+    <h2>Contact us</h2>
+    <p>+34 123 456 789</p>
+</footer>
+
+</body>
+</html>

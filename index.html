@@ -1,296 +1,763 @@
-<!DOCTYPE html>
-<html>
+<!-- /*
+* Template Name: LuxuryHotel
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDYEDJ4B52"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
 
-  gtag('config', 'G-YDYEDJ4B52');
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masia Paradise</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
-    <script src="script.js"></script>
-</head>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i,700|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Casa Rural Masia Paradise</title>
+
+    <style>
+      html {
+          scroll-behavior: smooth;
+      }
+  </style>
+  </head>
+  <body>
+
+    <div id="untree_co--overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Cargando...</span>
+      </div>
+    </div>
+
+    <nav class="untree_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Close</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
 
 
-    <div class="menu-container">
-        <div class="menu-button">
-            <p>Menu</p>
-        </div>
-        <div class="menu-button2">
+    <div class="untree_co--site-wrap">
+
+      <nav class="untree_co--site-nav js-sticky-nav">
+        <div class="container d-flex align-items-center">
+          <div class="logo-wrap">
+
+            <a href="index.html" class="untree_co--site-logo">
+              <img src="images/logoMasia.png" style="width: 60px;">       Masia Paradise</a>
+          </div>
+          <div class="site-nav-ul-wrap text-center d-none d-lg-block">
+            <ul class="site-nav-ul js-clone-nav">
+              <li class="active"><a href="index.html">Inicio</a></li>
+              <li class="has-children">
+                <a href= #informacion>Sobre la Masía</a>
+                
+            
+              </li>
+              <li><a href= #disponibilidad >Disponibilidad</a></li>
+              <li><a href= #galeria >Galería</a></li>
+              <li><a href= #contacto >Contacto</a></li>
+            </ul>
+          </div>
+          <div class="icons-wrap text-md-right">
+
+            
+            <ul class="icons-top d-none d-lg-block">
+              <a href="tel:607942361">
+              <img src="images/svg/telefono.svg" style="width: 15px;">
+              <li class="mr-4">
+                <p>607 942 361</p>
+              </li></a>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
       
-            <a href="#bookings"><div class="menu-button2"><p class="menu-button2">Disponibilidad</p></div></a>
-    </div>
+              <li>
+                <a href="https://www.instagram.com/masia.paradise?igsh=ejYxanQ3aHhvOXJ6" target="_blank"><span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <a href="#" class="d-block d-lg-none burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="untree_co--site-main">
         
-        <div class="dropdown">
-            <a href="#home"><div class="menu-parts"><p class="text-menu">Inicio</p></div></a>
-            <a href="#complete-container-reviews"><div class="menu-parts"><p class="text-menu">Opiniones</p></div></a>
-            <a href="#features"><div class="menu-parts"><p class="text-menu">Características</p></div></a>
-            <a href="#bookings"><div class="menu-parts"><p class="text-menu">Reservas</p></div></a>
-            <a href="#contact"><div class="menu-parts"><p class="text-menu">Contacto</p></div></a>
-        </div>
-        <div class="menu-languages">
-            <a href="index.html"><img id="spain" src="spain.jpg" alt="Spain"></a>
-            <a href="webPageENG.html"><img id="uk" src="uk.jpg" alt="uk"></a>
-        </div>
-    </div>
 
-    </div> 
+        <div class="owl-carousel owl-hero">
 
-    </div>
-
-
-    <div class="hero">
-        <img src="banner.jpg" class="banner" alt="Hero Image">
-        <div class="overlay">
-            <h1>Masia Paradise</h1>
-            <p>Las vacaciones que te mereces.</p>
-        </div>
-    </div>
-    
-    <div class="profile" id="home">
-        <div class="profile-content">
-            <img src="sala.jpg" class="profile-pic" alt="Sala" >
-            <div class="profile-text" id="profile-text-1">
-                <h1>¿Qué es Masia Paradise?</h1>
-                <h3>
-                    Esta casa tradicional está ubicada en mitad de un precioso Parque Natural, 
-                    a solo 30 minutos de Barcelona en coche o tren.  Perfecta para disfrutar de la naturaleza y 
-                    desconectar del estrés diario. Si necesitas paz y tranquilidad este es el momento 
-                    para salir de tu circulo diario y disfrutar de algo nuevo. Disfruta Masia Paradise.
-                </h3>
-            </div>
-        </div>
-        
-        <div class="profile-content">
-            <div class="profile-text" id="profile-text-2">
-                <h1>Relájate en nuestra piscina</h1>
-                <h3>
-                    La piscina es un lugar ideal para relajarse y disfrutar del sol. 
-                    Con amplias áreas de descanso, podrás disfrutar de un día perfecto con amigos y familiares. 
-                    La piscina se encuentra junto a la zona recreativa donde podrás hacer
-                    todo tipo de ejercicios y deporte. Por otro lado, toda la zona exterior está vallada, 
-                    por lo que no es necesario preocuparse por la privacidad.
-                </h3>
-            </div>
-            <img src="pool.jpg" alt="Piscina" class="profile-pic">
-        </div>
-    </div>
-    
-
-   <!--REVIEWS--> 
-    
-<div id="complete-container-reviews">
-    <div class="title-reviews"><h2>Reseñas de nuestros huéspedes</h2></div>
-    <div class="reviews-container" >
-    
-        <div class="reviews-slider">
-            <div class="review active">               
-                <p>"La casa es increíble, perfecta para desconectar."</p>
-                <span>- Juan Pérez</span>
-                <span class="review-stars"><img src="stars.png" alt="Estrellas"></span>
-            </div>
-            <div class="review">
-                <p>"Pasamos unas vacaciones maravillosas, aunque es un poco complicado llegar a la dirección indicada."</p>
-                <span>- Ana Gómez</span>
-                <span class="review-stars"><img src="stars2.png" alt="Estrellas"></span>
-            </div>
-            <div class="review">
-                <p>"Un lugar mágico, rodeado de naturaleza."</p>
-                <span>- Carlos Martínez</span>
-                <span class="review-stars"><img src="stars.png" alt="Estrellas"></span>
-            </div>
-        </div>
-       <button class="nav-button left" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="nav-button right" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-</div>
-    
-
-<!--PROJECTS/FEATURES-->
-<div class="projects-container" id="features">
-
-    <div class="project">
-        <a href="historia-masia.html">
-        <div class="project-overlay" id="la-masia">
-        <h3>La Masía</h3>
-    </div>
-        <img src="tu-imagen-2.jpg" alt="La Masía">
-    </div></a>
-
-    <div class="project" id="popup-trigger">
-        <div class="project-overlay">
-            <h3>Galeria</h3>
-        </div>
-        <img src="tu-imagen-6.jpg" alt="Galeria">
-    </div>
-
-    <div class="project">
-        
-        <div class="project-overlay">
-            <h3>Actividades</h3>
-        </div>
-       <img src="actividades.jpg" alt="Historia">
-    </div>
-
-
-    <div class="project">
-        <div class="project-overlay">
-            <h3>Eventos</h3>
-        </div>
-        <img src="tu-imagen-3.jpg" alt="Eventos">
-    </div>
-
-
-    <div class="project">
-        <div class="project-overlay">
-            <h3>Exteriores</h3>
-        </div>
-        <img src="tu-imagen-4.jpg" alt="Exteriores">
-    </div>
-
-
-    <div class="project">
-        <div class="project-overlay">
-            <h3>Naturaleza</h3>
-        </div>
-        <img src="tu-imagen-5.jpg" alt="Naturaleza">
-    </div>
-    
-
-   
-</div>
-
-
-
-    
-    <!-- ´slider popup NOT WORKING
-    <div id="popup" class="popup">
-        <span class="closy" onclick="closePopup()">&times;</span>
-        <div class="slider">
-            <img src="foto1.jpg" alt="Imagen 1">
-            <img src="foto2.jpg" alt="Imagen 2">
-            <img src="foto3.jpg" alt="Imagen 3">
-            
-        </div>
-        <button class="nav-button lefty" onclick="moveSlide2(-1)">&#10094;</button>
-        <button class="nav-button righty" onclick="moveSlide2(1)">&#10095;</button>
-    </div>
--->
-<div id="last3">
-<!--MAP CONTAINER-->
-
-
-
-<div class="calendar-container">
-            
-    <h2 id="calendar-title">Disponibilidad Octubre</h2>
-       
-       <!--<div id="calendar"></div>-->
-       <iframe class="iframe" src="https://calendar.google.com/calendar/embed?src=themasiaparadise%40gmail.com&ctz=Europe%2FMadrid"></iframe>        </div>
-</div>
-
-<!--RESERVATION BOX + CALENDAR DISPONABILITY-->
-    <div class="reservation-disponibility-container" id="bookings">
-
-
-        <div class="reservation">
-            <h2>Reserva tu Estancia</h2>
-            <form action="https://formspree.io/f/mdkkpvzz" method="POST">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required> <!--name attribute contains the info*-->
-
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="number" id="telefono" name="telefono" required> <!--name attribute contains the info*-->
-
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-
-                <div class="form-group">
-                    <label>Fechas de Ocupación:</label>
-                    <div class="date-selection">
-                        <div class="date-box">
-                            <label for="start-date">Fecha de Inicio:</label>
-                            <input type="date" id="start-date" name="start-date">
-                        </div>
-
-                        <div class="date-box">
-                            <label for="end-date">Fecha de Finalización:</label>
-                            <input type="date" id="end-date" name="end-date">
-                        </div>
+          <div class="untree_co--site-hero overlay" style="background-image: url('images/casa.jpg')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-8">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">Masia Paradise</h1>
+                    <div class="sub-text">
+                      <p> <b> Adelante, desconecta y siéntete como en casa. </b></p>
                     </div>
+                  </div>
                 </div>
-                
+              </div>
+            </div>
+          </div>
 
-                <div class="form-group">
-                    <label>Personas:</label>
-                    <br><br>
-                    <div class="group-quantities">
-                        <div class="quantity-box">
-                            <label for="adults">Adultos:</label>
-                            <input type="number" id="adults" name="adults" min="0" value="0">
-                        </div>
-                        <div class="quantity-box">
-                            <label for="children">Niños:</label>
-                            <input type="number" id="children" name="children" min="0" value="0">
-                        </div>
-                        <div class="quantity-box">
-                            <label for="babies">Bebés:</label>
-                            <input type="number" id="babies" name="babies" min="0" value="0">
-                        </div>
-                        <div class="quantity-box">
-                            <label for="pets">Mascotas:</label>
-                            <input type="number" id="pets" name="pets" min="0" value="0">
-                        </div>
-                    </div>
+          <div class="untree_co--site-hero overlay"  style="background-image: url('images/casa2.webp')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-7">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">Una lugar que recordarás</h1>
+                    
+                  </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="description">Descripción Adicional:</label>
-                    <textarea id="description" name="description" rows="4" placeholder="Escribe aquí..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="untree_co--site-hero overlay" style="background-image: url('images/casa3.jpg')">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-10">
+                  <div class="site-hero-contents text-center" data-aos="fade-up">
+                    <h1 class="hero-heading">No es solo una masía. Descúbrelo tú mismo.</h1>
+                  </div>
                 </div>
-                <button type="submit">Enviar Reserva</button>
-            </form>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="map-container">
 
-            <iframe 
+        <div class="untree_co--site-section float-left pb-0 featured-rooms">
+
+          <div class="container pt-0 pb-5">
+            <div class="row justify-content-center text-center">  
+              <div class="col-lg-6 section-heading" data-aos="fade-up">
+                <h3 class="text-center">Nuestra masía</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid pt-5">
+            <div class="suite-wrap overlap-image-1">
+
+              <div class="suite">
+                <div class="image-stack">
+                  <div class="image-stack-item image-stack-item-top" data-jarallax-element="-50">
+                    <div class="overlay"></div>
+                    <img src="images/Interior2.webp" alt="Image" class="img-fluid pic1">
+                  </div>
+                  <div class="image-stack-item image-stack-item-bottom">
+                    <div class="overlay"></div>
+                    <img src="images/Interior1.webp" alt="Image" class="img-fluid pic2">
+                  </div>
+                </div>
+              </div> <!-- .suite -->
+
+              <div class="suite-contents" data-jarallax-element="50">
+                <h2 class="suite-title">Interiores</h2>
+                <div class="suite-excerpt">
+                  <p>Con una capacidad de 12 personas, los interiores de Masia Paradise han 
+                    sido remodelados respetando su esencia rústica, 
+                    pero con todas las comodidades modernas para una estancia única. 
+                    Espacios amplios, detalles hechos en madera, chimenea acogedora y rincones llenos de encanto 
+                    te esperan para disfrutar del turismo rural en un entorno especial.</p>
+                  <p ><a href="#" class="readmore" style="color: white;">Room Details</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="suite-wrap overlap-image-2">
+
+              <div class="suite">
+                <div class="image-stack">
+                  <div class="image-stack-item image-stack-item-top">
+                    <div class="overlay"></div>
+                    <img src="images/exterior2.jpg" alt="Image" class="img-fluid pic1">
+                  </div>
+                  <div class="image-stack-item image-stack-item-bottom" data-jarallax-element="-50">
+                    <div class="overlay"></div>
+                    <img src="images/exterior1.jpg" alt="Image" class="img-fluid pic2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="suite-contents" data-jarallax-element="50">
+                <h2 class="suite-title">Exteriores</h2>
+                <div class="suite-excerpt pr-5">
+                  <p>Nuestra masía rural está en pleno Parque Natural, un entorno privilegiado para 
+                    quienes buscan tranquilidad y contacto con la naturaleza. También podrás disfrutar de nuestra piscina, 
+                    perfecta para los días soleados, junto a la zona deportiva.
+
+                    Los jardines y terrazas ofrecen espacios ideales para el descanso, 
+                    con rincones sombreados y áreas para disfrutar de una comida al aire libre.</p>
+                  <p > <a href="#" class="readmore" style="color: white;">Room Details</a></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div style="border-bottom: 2px solid #ccc; margin: 20px 0;"></div>
+
+        <div class="untree_co--site-section">
+          <div class="container">
+            <div class="container pt-0 pb-5">
+            <div class="row justify-content-center text-center">  
+              <div class="col-lg-6 section-heading" data-aos="fade-up">
+                <h3 id="informacion" class="text-center">Información sobre la Masía</h3>
+              </div>
+            </div>
+          </div>
+            <div class="row custom-row-02192 align-items-stretch">
+              <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="media-29191 text-center h-100">
+                  <div class="media-29191-icon">
+                    <img src="images/svg/users.svg" alt="Grupo de gente" class="img-fluid">
+                  </div>
+                  <h3>Capacidad</h3>
+                  <p style="text-align: justify";> En esta estancia rural, se permitirán hasta 12 personas, 
+                    con la opción de añadir cunas para los pequeños. Recomendado para familias y grupos que buscan disfrutar de la esencia del turismo rural.</p>
+                  <img style="width: 30px;"   src="images/svg/camadoble.png" alt="Grupo de gente" class="img-fluid"><p> x 4</p>
+                  <img style="width: 30px;" src="images/svg/camaindividual.png" alt="Grupo de gente" class="img-fluid"><p> x 2</p>
+                  <img style="width: 30px;" src="images/svg/sofacama.png" alt="Grupo de gente" class="img-fluid"><p> x 1</p>
+                  <p><p><a href="#" class="readmore reverse" style="color: white;">Read More</a></p></p>
+                </div>
+              </div>
+
+              <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
+
+              <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="media-29191 text-center h-100">
+                  <div class="media-29191-icon">
+                    <img src="images/svg/location.svg" alt="Image" class="img-fluid">
+                  </div>
+                  <h3>Localización</h3>
+                  <p style="text-align: justify";>A sólo 30 minutos de Barcelona, pero lo suficientemente alejada para disfrutar de una desconexión total, Masia Paradise 
+                   ofrece un refugio en pleno Parque Natural del Montnegre i el Corredor. Además, la casa dispone de dos supermercados cercanos.</p>
+                  <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10069.355335855216!2d2.4400974!3d41.6363346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a50c32e8c13d45%3A0x1ecb3b3c4b84cb3b!2s41.636334563708395%2C%202.440097353771794!5e0!3m2!1ses!2ses!4v1632943549518!5m2!1ses!2ses" 
                 width="200" 
-                height="200" 
+                 
                 allowfullscreen=""> <!--yes-->
             </iframe>
-        
-            <p id="direccion">> Masia Paradise " Cal Coix ", s/n, 08450 Collsabadell, Barcelona</p>
+                  <p><p><a href="#" class="readmore reverse" style="color: white;">Read More</a></p></p>
+                </div>
+              </div>
+              
+              <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
+
+              <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="media-29191 text-center h-100">
+                  <div class="media-29191-icon">
+                    <img src="images/svg/nature.svg" alt="Image" class="img-fluid">
+                  </div>
+                  <h3>Actividades Exteriores</h3>
+                  <p style="text-align: justify";>La masía cuenta con jardines amplios, barbacoa y
+                    zonas de descanso. Está rodeada de rutas de senderismo señalizadas, 
+                    aptas para todos los niveles, con acceso a miradores, bosques y parajes naturales. También hay áreas de picnic 
+                    y espacios al aire libre para actividades deportivas y recreativas.</p>
+                  <p><p><a href="#" class="readmore reverse" style="color: white;">Read More</a></p></p>
+                </div>
+              </div>
+              
+             
+
+            </div>
+          </div>
         </div>
+        
+        <div style="border-bottom: 1px solid #ccc; margin: 20px 0;"></div>
+
+        
+        
+
+        <div class="untree_co--site-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 section-heading" data-aos="fade-up">
+                <h3 id="disponibilidad" class="text-left">Disponibilidad</h3>
+                <div style="background:#fff;width:360px; align-items: center; display: flex; justify-content: center;"><iframe style="align-items: center; display: flex; justify-content: center;" src="https://www.availcalendar.com/es/print/24671?mode=5" width="212" height="251" frameborder="0" scrolling="no"></iframe></div> 
+              </div>
+
+          
+              <div class="col-md-4">
+                <div class="reservation-disponibility-container" id="bookings">
+                    <div class="content-container">
+                    
+            
+                        <div class="reservation">
+                            <h2>Reserva tu Estancia</h2>
+                            <form action="https://formspree.io/f/mdkkpvzz" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label><b>Fechas de Ocupación:</b></label>
+                                    <div class="date-selection">
+                                        <div class="date-box">
+                                            <label for="start-date">Fecha de Inicio:</label>
+                                            <input type="date" id="start-date" name="start-date">
+                                        </div>
+            
+                                        <div class="date-box">
+                                            <label for="end-date">Fecha de Finalización:</label>
+                                            <input type="date" id="end-date" name="end-date">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Inputs compactos en una sola fila -->
+                                <div class="form-group">
+                                    <label>Personas:</label>
+                                    <div class="group-quantities">
+                                        <div class="quantity-box">
+                                            <label for="adults">Adultos</label>
+                                            <input type="number" id="adults" name="adults" min="0" value="0">
+                                        </div>
+                                        <div class="quantity-box">
+                                            <label for="children">Niños</label>
+                                            <input type="number" id="children" name="children" min="0" value="0">
+                                        </div>
+                                        <div class="quantity-box">
+                                            <label for="babies">Bebés</label>
+                                            <input type="number" id="babies" name="babies" min="0" value="0">
+                                        </div>
+                                        <div class="quantity-box">
+                                            <label for="pets">Mascotas</label>
+                                            <input type="number" id="pets" name="pets" min="0" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label for="phone">Teléfono:</label>
+                                    <input type="number" id="phone" name="phone" required>
+                                </div>
+            
+                              
+                                <button type="submit">Enviar Reserva</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+                <style>
+                    .reservation-disponibility-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                    }
+            
+                    .content-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        width: 100%;
+                        max-width: 1000px;
+                        font-size: 0.8em;
+                    }
+            
+                    .info-section {
+                        flex: 1;
+                        background: #f4f4f4;
+                        padding: 20px;
+                        border-radius: 10px;
+                    }
+            
+                    .reservation {
+                        flex: 1;
+                        background: #fff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    .form-group {
+                        margin-bottom: 15px;
+                    }
+            
+                    input, textarea {
+                        width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+            
+                    /* Inputs en una sola línea */
+                    .group-quantities {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                    }
+            
+                    .quantity-box {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 22%;
+                        min-width: 60px;
+                        text-align: center;
+                    }
+            
+                    .quantity-box label {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+            
+                    .quantity-box input {
+                        width: 50px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+            
+                    button {
+                        background: #28a745;
+                        color: white;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+            
+                    button:hover {
+                        background: #218838;
+                    }
+            
+                    @media (max-width: 768px) {
+                        .group-quantities {
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+            
+                        .quantity-box {
+                            width: 23%;
+                        }
+                    }
+                </style>
+            </div>
+            
+            
+
+        <div id="galeria" class="col-md-4 section-heading" data-aos="fade-up">
+          <h3  class="text-left">Galería</h3>
+
+          <!-- Carrusel de imágenes -->
+          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/galeria/galeria3.webp" class="d-block w-100" alt="Imagen 1">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/galeria/galeria1.jpg" class="d-block w-100" alt="Imagen 2">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/galeria/galeria2.jpg" class="d-block w-100" alt="Imagen 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/galeria/galeria4.webp" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/galeria/galeria5.jpg" class="d-block w-100" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="images/galeria/galeria6.webp" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/galeria/galeria7.webp" class="d-block w-100" alt="Imagen 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeria/galeria8.webp" class="d-block w-100" alt="Imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/galeria/galeria9.webp" class="d-block w-100" alt="Imagen 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/galeria/galeria10.webp" class="d-block w-100" alt="Imagen 3">
+    </div><div class="carousel-item">
+      <img src="images/galeria/galeria11.webp" class="d-block w-100" alt="Imagen 3">
+  </div>
+  <div class="carousel-item">
+    <img src="images/galeria/galeria12.webp" class="d-block w-100" alt="Imagen 3">
+</div>
+<div class="carousel-item">
+  <img src="images/galeria/galeria13.webp" class="d-block w-100" alt="Imagen 3">
+</div>
+              </div>
+              <!-- Controles -->
+              <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#galleryCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- CSS dentro del HTML -->
+<style>
+  .carousel {
+      width: 100%;
+      max-width: 360px;
+      margin: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      padding: 10px;
+  }
+
+  .reservation-disponibility-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+  }
+
+  .info-section {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+  }
+
+  .reservation {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+  .group-quantities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .quantity-box {
+      flex: 1;
+      min-width: 120px;
+  }
+
+  button {
+      background: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background: #218838;
+  }
+
+  @media (max-width: 768px) {
+      .content-container {
+          flex-direction: column;
+      }
+  }
+</style>
+
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
+    
+        <div class="untree_co--site-section py-5 bg-body-darker cta">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h3 class="m-0 p-0">Para cualquier consulta, contacte al <a style="font-size: 26px;   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="tel:+34607942361">
+                    <p>+34 607 942 361</p>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <footer class="untree_co--site-footer">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 pr-md-5">
+              <h3> Sobre Nosotros</h3>
+              <p>Me presento, soy Sergio, propietario de Masia Paradise. Mi amor por la naturaleza y las casas rurales me ha hecho reconstruir esta masía 
+                con todo el amor del mundo. Ahora, quiero que seáis vosotros quien disfruten de ella. <br> <br> Bienvenidos a Masia Paradise.
+              </p>
+              <p><a href="#" class="readmore" style="color: white;">Read more</a></p>
+            </div>
+            <div class="col-md-8 ml-auto">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3>Navigation</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Disponibilidad</a></li>
+                    <li><a href="#">Galeria</a></li>
+                  
+                  </ul>
+                </div>
+                <div class="col-md-9 ml-auto">
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <h3>Address</h3>
+                      <address> Masia Paradise " Cal Coix ", <br> s/n, 08450 Collsabadell, <br>Barcelona, España  </address>
+                    </div>
+                    <div class="col-md-6">
+                      <h3>Teléfono de Contacto:</h3>
+                      <p>
+                        <a href="#">+34 607 942 361</a>
+                      
+                      </p>
+                      <h3>E-mail:</h3>
+                      <p>
+                        <a href="#">themasiaparadise@gmail.com</a>
+                      
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 pt-5 align-items-center">
+            <div class="col-md-6 text-md-left">
+              <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
+              <p>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="index.html">Untree.co</a>. All Rights Reserved. Design by <a href="https://untree.co/" target="_blank" class="text-primary">Untree.co</a>
+              </p>
+            <!-- Link back to Untree.co can't be removed. Template is licensed under CC BY 3.0. If you purchased a license you can remove this. -->
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="icons-top icons-dark">
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-tripadvisor"></span></a>
+              </li>
+            </ul>
+
+            </div>
+          </div>
+        </div>
+        
+      </footer>
     </div>
 
- <footer>
-    <h3 id="contact">Contáctanos</h3>
-    <ul class="social-links">
-        <img src="correo.png" height="30em" width="30em">
-        <img src="instagram.png" height="30em" width="30em">
-        <img src="whatsapp.png" height="30em" width="30em">
-       <br><br>
-        
-        <li>sergio.berrocal@piaffe.es</li>
-        <li><a href="https://www.instagram.com/masia.paradise/" target="_blank">Instagram</a></li>
-        <li>+34 607 294 788</li>
+    <!-- Search -->
+    <div class="search-wrap">
+      <a href="#" class="close-search js-search-toggle">
+        <span>Close</span>
+      </a>
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-12">
+            <form action="#">
+              <input type="search" name="s" id="s" placeholder="Type a keyword and hit enter..."  autocomplete="false">
+            </form>    
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </ul>
-</footer>
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
 
-</body>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    
+    <script src="js/vendor/jarallax.min.js"></script>
+    <script src="js/vendor/jarallax-element.min.js"></script>
+    <script sr c="js/vendor/ofi.min.js"></script>
+
+    <script src="js/vendor/aos.js"></script>
+
+    <script src="js/vendor/jquery.lettering.js"></script>
+    <script src="js/vendor/jquery.sticky.js"></script>
+
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <script src="js/vendor/ScrollMagic.min.js"></script>
+    <script src="js/vendor/scrollmagic.animation.gsap.min.js"></script>
+    <script src="js/vendor/debug.addIndicators.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

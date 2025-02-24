@@ -1,1 +1,1 @@
-Name: Casa Rural Masia Paradise
+Name: Masia Paradise - Casa Rural

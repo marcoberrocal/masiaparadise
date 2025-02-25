@@ -11,75 +11,81 @@
     <meta name="author" content="Untree.co">
     <link rel="shortcut icon" href="favicon.png">
 
-    <!-- CSS del calendario (terceros) -->
-<link rel="preload" href="https://www.availcalendar.com/css/css_nqjnM.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="https://www.availcalendar.com/css/css_8qkjO.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="https://www.availcalendar.com/css/css_xE-rW.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+   <link rel="stylesheet" href="/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/animate.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 
-<!-- CSS locales -->
-<link rel="preload" href="/icon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="/vendor/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="/vendor/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="/vendor/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
-<link rel="preload" href="/vendor/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <!-- 💡 Estilos no críticos con preload -->
+    <link rel="preload" href="/vendor/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <link rel="preload" href="/icon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <link rel="preload" href="/vendor/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
 
-<!-- Google Fonts con display: swap para evitar FOIT -->
-<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <!-- 🌍 Estilos de terceros (Calendario de disponibilidad) -->
+    <link rel="preload" href="https://www.availcalendar.com/css/css_nqjnM.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <link rel="preload" href="https://www.availcalendar.com/css/css_8qkjO.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+    <link rel="preload" href="https://www.availcalendar.com/css/css_xE-rW.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
 
- <!-- jQuery (necesario antes de otros plugins) -->
-<link rel="preload" href="/vendor/jquery-3.3.1.min.js" as="script">
-<script src="/vendor/jquery-3.3.1.min.js" defer></script>
+    <!-- 🔤 Google Fonts optimizado con display: swap -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';">
 
-<!-- Plugins de JS -->
-<link rel="preload" href="/vendor/TweenMax.min.js" as="script">
-<script src="/vendor/TweenMax.min.js" defer></script>
+    <!-- ======================== IMÁGENES ======================== -->
 
-<link rel="preload" href="/vendor/owl.carousel.min.js" as="script">
-<script src="/vendor/owl.carousel.min.js" defer></script>
+    <!-- 🖼️ Precarga de las imágenes principales del carrusel para evitar Layout Shifts -->
+    <link rel="preload" href="/images/carousel-1.jpg" as="image">
+    <link rel="preload" href="/images/carousel-2.jpg" as="image">
+    <link rel="preload" href="/images/carousel-3.jpg" as="image">
 
-<link rel="preload" href="/vendor/scrollmagic.animation.gsap.min.js" as="script">
-<script src="/vendor/scrollmagic.animation.gsap.min.js" defer></script>
+    <!-- ======================== JavaScript ======================== -->
 
-<link rel="preload" href="/vendor/jarallax-element.min.js" as="script">
-<script src="/vendor/jarallax-element.min.js" defer></script>
+    <!-- 💡 jQuery necesario para el carrusel y otros plugins (Carga rápida y prioritaria) -->
+    <script src="/vendor/jquery-3.3.1.min.js"></script>
 
-<link rel="preload" href="/vendor/popper.min.js" as="script">
-<script src="/vendor/popper.min.js" defer></script>
+    <!-- ✅ JavaScript del carrusel (Carga lo antes posible) -->
+    <link rel="preload" href="/vendor/owl.carousel.min.js" as="script">
+    <script src="/vendor/owl.carousel.min.js" async></script>
 
-<link rel="preload" href="/vendor/jquery.lettering.js" as="script">
-<script src="/vendor/jquery.lettering.js" defer></script>
+    <!-- 🏎️ Script principal para inicializar el carrusel (Carga rápida) -->
+    <link rel="preload" href="/js/main.js" as="script">
+    <script src="/js/main.js" async></script>
 
-<link rel="preload" href="/vendor/bootstrap.min.js" as="script">
-<script src="/vendor/bootstrap.min.js" defer></script>
+    <!-- 🧩 Plugins secundarios de JavaScript (Carga diferida) -->
+    <link rel="preload" href="/vendor/TweenMax.min.js" as="script">
+    <script src="/vendor/TweenMax.min.js" defer></script>
 
-<link rel="preload" href="/vendor/debug.addIndicators.min.js" as="script">
-<script src="/vendor/debug.addIndicators.min.js" defer></script>
+    <link rel="preload" href="/vendor/scrollmagic.animation.gsap.min.js" as="script">
+    <script src="/vendor/scrollmagic.animation.gsap.min.js" defer></script>
 
-<link rel="preload" href="/vendor/ScrollMagic.min.js" as="script">
-<script src="/vendor/ScrollMagic.min.js" defer></script>
+    <link rel="preload" href="/vendor/jarallax-element.min.js" as="script">
+    <script src="/vendor/jarallax-element.min.js" defer></script>
 
-<link rel="preload" href="/vendor/jquery.sticky.js" as="script">
-<script src="/vendor/jquery.sticky.js" defer></script>
+    <link rel="preload" href="/vendor/popper.min.js" as="script">
+    <script src="/vendor/popper.min.js" defer></script>
 
-<link rel="preload" href="/vendor/aos.js" as="script">
-<script src="/vendor/aos.js" defer></script>
+    <link rel="preload" href="/vendor/jquery.lettering.js" as="script">
+    <script src="/vendor/jquery.lettering.js" defer></script>
 
-<link rel="preload" href="/vendor/jarallax.min.js" as="script">
-<script src="/vendor/jarallax.min.js" defer></script>
+    <link rel="preload" href="/vendor/bootstrap.min.js" as="script">
+    <script src="/vendor/bootstrap.min.js" defer></script>
 
-<!-- JS Principal -->
-<link rel="preload" href="/js/main.js" as="script">
-<script src="/js/main.js" defer></script>
+    <link rel="preload" href="/vendor/debug.addIndicators.min.js" as="script">
+    <script src="/vendor/debug.addIndicators.min.js" defer></script>
 
-<!-- Bootstrap Bundle desde CDN -->
-<link rel="preload" href="https://cdn.jsdelivr.net/js/bootstrap.bundle.min.js" as="script">
-<script src="https://cdn.jsdelivr.net/js/bootstrap.bundle.min.js" defer></script>
-   
-    <link rel="preload" as="image" href="images/casa.jpg">
-    <link rel="preload" as="image" href="images/casa2.webp">
-    <link rel="preload" as="image" href="images/casa3.jpg">
+    <link rel="preload" href="/vendor/ScrollMagic.min.js" as="script">
+    <script src="/vendor/ScrollMagic.min.js" defer></script>
 
+    <link rel="preload" href="/vendor/jquery.sticky.js" as="script">
+    <script src="/vendor/jquery.sticky.js" defer></script>
+
+    <link rel="preload" href="/vendor/aos.js" as="script">
+    <script src="/vendor/aos.js" defer></script>
+
+    <link rel="preload" href="/vendor/jarallax.min.js" as="script">
+    <script src="/vendor/jarallax.min.js" defer></script>
+
+    <!-- 🌐 Bootstrap desde CDN (Carga diferida para no bloquear) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/js/bootstrap.bundle.min.js" as="script">
+    <script src="https://cdn.jsdelivr.net/js/bootstrap.bundle.min.js" defer></script>
+</head>
     
     <!-- 2. Google Tag Manager (debe estar lo más arriba posible) -->
     <!-- Google Tag Manager -->

@@ -121,6 +121,46 @@ padding: 0 2em;
     border-radius: 2em;
 }
 
+.owl-carousel.owl-hero {
+    width: 100%;
+    height: 500px; /* Altura fija para evitar el desplazamiento */
+    position: relative;
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.untree_co--site-hero {
+    width: 100%;
+    height: 100%;
+    min-height: 500px; /* Reserva espacio para evitar desplazamientos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-hero-contents {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-heading {
+    font-size: 3em;
+    line-height: 1.2;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
+
 .banner {
     width: 100%;
     height: 100%;

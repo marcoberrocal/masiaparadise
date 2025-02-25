@@ -110,6 +110,10 @@ padding: 0 2em;
     height: auto;
 }
 
+.untree_co--site-main {
+    min-height: 500px; /* Ajusta a la altura de tu hero */
+    overflow: hidden;
+}
 
 /* Herooo */
 .hero {

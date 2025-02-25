@@ -112,45 +112,23 @@ padding: 0 2em;
 
 
 /* Herooo */
-.hero {  /*container*/
+.hero {
     position: relative;
     width: 100%;
-    min-height: 400px;
-  
-    background-color: #333; /*dark background color + low photo opacity*/
-    color: white;
+    aspect-ratio: 16 / 9; /* Reserva espacio antes de que la imagen se cargue */
+    overflow: hidden;  /* Evita cualquier desbordamiento */
+    background-color: #333;
     border-radius: 2em;
 }
 
 .banner {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; 
     object-position: center;
     opacity: 0.5;
     border-radius: 2em;
-}
-
-/* Para pantallas grandes: Aspect ratio 16:9 */
-@media (min-width: 1024px) {
-    .banner {
-        aspect-ratio: 16 / 9;
-    }
-}
-
-/* Para tabletas: Aspect ratio 4:3 */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .banner {
-        aspect-ratio: 4 / 3;
-    }
-}
-
-/* Para móviles: Aspect ratio 1:1 o altura fija */
-@media (max-width: 767px) {
-    .banner {
-        aspect-ratio: 1 / 1;
-        min-height: 300px; /* Garantiza que no sea demasiado pequeño */
-    }
+    display: block; /* Asegura que no haya espacios extra */
 }
 
 .overlay {  /*text*/

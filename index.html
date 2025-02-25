@@ -784,15 +784,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <script>
         document.addEventListener("DOMContentLoaded", function () {
-            $(".owl-hero").owlCarousel({
-                items: 1,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: false,
-                smartSpeed: 800
-            });
-        });
+    $(".owl-hero").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        smartSpeed: 800,
+        autoHeight: false,  // <-- Evita el desplazamiento
+        lazyLoad: true      // Carga las imágenes de forma optimizada
+    });
+});
+
      
     </script>
     <script src="js/main.js"></script>

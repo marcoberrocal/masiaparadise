@@ -124,10 +124,11 @@ padding: 0 2em;
 /* HERO Carousel - Solución CLS */
 .owl-carousel.owl-hero {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Mantiene el espacio reservado antes de la carga */
+    aspect-ratio: 16 / 9; 
     overflow: hidden;
     position: relative;
     border-radius: 2em;
+    min-height: 500px; /* Mantiene el espacio reservado */
 }
 
 .untree_co--site-hero {
@@ -141,7 +142,9 @@ padding: 0 2em;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+    min-height: 500px; /* Evita desplazamientos */
 }
+
 
 .site-hero-contents {
     text-align: center;

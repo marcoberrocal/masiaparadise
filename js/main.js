@@ -13,7 +13,7 @@ $(function() {
 	'use strict';
 	
 $(".loader").delay(700).fadeOut("slow");
-  $("#untree_co--overlayer").delay(700).fadeOut("slow");	
+  $("#untree_co--overlayer").delay(200).fadeOut("fast");	
 
 	var jarallaxPlugin = function() {
 		objectFitImages();

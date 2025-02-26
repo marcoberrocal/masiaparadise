@@ -11,7 +11,9 @@ setTimeout(function() {
 $(function() {
 
 	'use strict';
-
+	
+$(".loader").delay(700).fadeOut("slow");
+  $("#untree_co--overlayer").delay(700).fadeOut("slow");	
 
 	var jarallaxPlugin = function() {
 		objectFitImages();

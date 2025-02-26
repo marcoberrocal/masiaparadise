@@ -82,16 +82,6 @@ a, a:hover {
   }
 }
 
-.loader {
-  z-index: 7700;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .search-wrap {
   width: 100%;
   position: fixed;
@@ -2010,3 +2000,12 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   margin-bottom: 0;
 }
 
+.loader {
+  z-index: 7700;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

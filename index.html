@@ -398,85 +398,159 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
 
         
         
-
-        <div class="untree_co--site-section">
+ <div class="untree_co--site-section">
           <div class="container">
-            <div class="row">
-              <div class="col-md-4 section-heading" data-aos="fade-up">
-                <h3 id="disponibilidad" class="text-left">Disponibilidad</h3>
-                <div style="background:#fff;width:300px;"><iframe src="https://www.availcalendar.com/es/print/24671?mode=5" width="220" height="220" frameborder="0" scrolling="no"></iframe></div>
-
-          
-              <div class="col-md-4">
-                <div class="reservation-disponibility-container" id="bookings">
-                    <div class="content-container">
-                    
-            
-                        <div class="reservation">
-                            <h2>Reserva tu Estancia</h2>
-                            <form action="https://formspree.io/f/mdkkpvzz" method="POST">
-                                <div class="form-group">
-                                    <label for="name">Nombre:</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-            
-                                <div class="form-group">
-                                    <label><b>Fechas de Ocupación:</b></label>
-                                    <div class="date-selection">
-                                        <div class="date-box">
-                                            <label for="start-date">Fecha de Inicio:</label>
-                                            <input type="date" id="start-date" name="start-date">
-                                        </div>
-            
-                                        <div class="date-box">
-                                            <label for="end-date">Fecha de Finalización:</label>
-                                            <input type="date" id="end-date" name="end-date">
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <!-- Inputs compactos en una sola fila -->
-                                <div class="form-group">
-                                    <label>Personas:</label>
-                                    <div class="group-quantities">
-                                        <div class="quantity-box">
-                                            <label for="adults">Adultos</label>
-                                            <input type="number" id="adults" name="adults" min="0" value="0">
-                                        </div>
-                                        <div class="quantity-box">
-                                            <label for="children">Niños</label>
-                                            <input type="number" id="children" name="children" min="0" value="0">
-                                        </div>
-                                        <div class="quantity-box">
-                                            <label for="babies">Bebés</label>
-                                            <input type="number" id="babies" name="babies" min="0" value="0">
-                                        </div>
-                                        <div class="quantity-box">
-                                            <label for="pets">Mascotas</label>
-                                            <input type="number" id="pets" name="pets" min="0" value="0">
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="form-group">
-                                    <label for="phone">Teléfono:</label>
-                                    <input type="number" id="phone" name="phone" required>
-                                </div>
-            
-                              
-                                <button type="submit">Enviar Reserva</button>
-                            </form>
-                        </div>
-                    </div>
+              <div class="row row-disponibilidad">
+                  <!-- Columna del calendario -->
+                  <div class="col-md-6 section-heading" data-aos="fade-up">
+                      <h3 id="disponibilidad" class="text-left">Disponibilidad</h3>
+                      <div class="calendar-container">
+                          <iframe src="https://www.availcalendar.com/es/print/24671?mode=5" frameborder="0" scrolling="no"></iframe>
+                      </div>
+                  </div>
+      
+                  <!-- Columna del formulario -->
+                  <div class="col-md-6">
+                      <div class="reservation-disponibility-container" id="bookings">
+                          <div class="content-container">
+                              <div class="reservation">
+                                  <h2>Reserva tu Estancia</h2>
+                                  <form action="https://formspree.io/f/mdkkpvzz" method="POST">
+                                      <div class="form-group">
+                                          <label for="name">Nombre:</label>
+                                          <input type="text" id="name" name="name" required>
+                                      </div>
+      
+                                      <div class="form-group">
+                                          <label><b>Fechas de Ocupación:</b></label>
+                                          <div class="date-selection">
+                                              <div class="date-box">
+                                                  <label for="start-date">Fecha de Inicio:</label>
+                                                  <input type="date" id="start-date" name="start-date">
+                                              </div>
+      
+                                              <div class="date-box">
+                                                  <label for="end-date">Fecha de Finalización:</label>
+                                                  <input type="date" id="end-date" name="end-date">
+                                              </div>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-group">
+                                          <label>Personas:</label>
+                                          <div class="group-quantities">
+                                              <div class="quantity-box">
+                                                  <label for="adults">Adultos</label>
+                                                  <input type="number" id="adults" name="adults" min="0" value="0">
+                                              </div>
+                                              <div class="quantity-box">
+                                                  <label for="children">Niños</label>
+                                                  <input type="number" id="children" name="children" min="0" value="0">
+                                              </div>
+                                              <div class="quantity-box">
+                                                  <label for="babies">Bebés</label>
+                                                  <input type="number" id="babies" name="babies" min="0" value="0">
+                                              </div>
+                                              <div class="quantity-box">
+                                                  <label for="pets">Mascotas</label>
+                                                  <input type="number" id="pets" name="pets" min="0" value="0">
+                                              </div>
+                                          </div>
+                                      </div>
+      
+                                      <div class="form-group">
+                                          <label for="phone">Teléfono:</label>
+                                          <input type="number" id="phone" name="phone" required>
+                                      </div>
+      
+                                      <button type="submit">Enviar Reserva</button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Galería en grande debajo -->
+              <div id="galeria" class="col-md-12 section-heading" data-aos="fade-up">
+                  <h3 class="text-left">Galería</h3>
+      
+                  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                      <img src="images/galeria/galeria3.webp" class="d-block w-100" alt="chimenea con fuego" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/galeria/galeria1.jpg" class="d-block w-100" alt="casa con piscina" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/galeria/galeria2.jpg" class="d-block w-100" alt="jardin exterior grande" loading="lazy">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/galeria/galeria4.webp" class="d-block w-100" alt="fachada de piedra" loading="lazy">
                 </div>
-            
-                <style>
-                    .reservation-disponibility-container {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 20px;
-                    }
+                <div class="carousel-item">
+                  <img src="images/galeria/galeria5.jpg" class="d-block w-100" alt="fiesta en jardín" loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img src="images/galeria/galeria6.webp" class="d-block w-100" alt="sala de estar rural" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="images/galeria/galeria7.webp" class="d-block w-100" alt="Baño de lujo" loading="lazy">
+          </div>
+          <div class="carousel-item">
+            <img src="images/galeria/galeria8.webp" class="d-block w-100" alt="suite doble" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="images/galeria/galeria9.webp" class="d-block w-100" alt="sala con vistas exteriores" loading="lazy">
+      </div>
+      <div class="carousel-item">
+        <img src="images/galeria/galeria10.webp" class="d-block w-100" alt="libreria grande" loading="lazy">
+    </div><div class="carousel-item">
+      <img src="images/galeria/galeria11.webp" class="d-block w-100" alt="habitación grande" loading="lazy">
+  </div>
+  <div class="carousel-item">
+    <img src="images/galeria/galeria12.webp" class="d-block w-100" alt="zona social para grupo de gente" loading="lazy">
+</div>
+<div class="carousel-item">
+  <img src="images/galeria/galeria13.webp" class="d-block w-100" alt="celebración con piscina" loading="lazy">
+</div>                         
+                      </div>
+                      <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#galleryCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <style>
+      /* Distribuir en dos columnas al 50% */
+      .row-disponibilidad {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: stretch;
+          margin-bottom: 20px;
+      }
+      
+      /* Ajustar el iframe para ocupar la mitad de la pantalla */
+      .calendar-container iframe {
+          width: 100%;
+          height: 50vh; /* La mitad de la pantalla */
+          border-radius: 10px;
+      }
+      
+      /* Ajustar el formulario */
+      .reservation-disponibility-container {
+          display: flex;
+          align-items: center;
+          height: 50vh; /* Igual al iframe */
+          padding: 20px;
+      }
             
                     .content-container {
                         display: flex;
@@ -565,164 +639,60 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                             width: 23%;
                         }
                     }
-                </style>
-            </div>
-            
-            
-
-        <div id="galeria" class="col-md-4 section-heading" data-aos="fade-up">
-          <h3  class="text-left">Galería</h3>
+      
+      .content-container {
+          width: 100%;
+      }
+      
+      /* Galería en grande debajo */
+      #galeria {
+          width: 100%;
+          margin-top: 40px;
+      }
+      
+      /* Ajustar la galería */
+      .carousel {
+          width: 100%;
+          max-width: 800px;
+          margin: auto;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .carousel img {
+          height: 400px;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+      
+      /* Botones de navegación */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          padding: 10px;
+      }
+      
+      /* Ajustes para móviles */
+      @media (max-width: 768px) {
+          .row-disponibilidad {
+              flex-direction: column;
+          }
+      
+          .calendar-container iframe,
+          .reservation-disponibility-container {
+              height: auto;
+          }
+      }
+      </style>
+    
 
           <!-- Carrusel de imágenes -->
           <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img src="images/galeria/galeria3.webp" class="d-block w-100" alt="chimenea con fuego" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="images/galeria/galeria1.jpg" class="d-block w-100" alt="casa con piscina" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="images/galeria/galeria2.jpg" class="d-block w-100" alt="jardin exterior grande" loading="lazy">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/galeria/galeria4.webp" class="d-block w-100" alt="fachada de piedra" loading="lazy">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/galeria/galeria5.jpg" class="d-block w-100" alt="fiesta en jardín" loading="lazy">
-              </div>
-              <div class="carousel-item">
-                <img src="images/galeria/galeria6.webp" class="d-block w-100" alt="sala de estar rural" loading="lazy">
-            </div>
-            <div class="carousel-item">
-              <img src="images/galeria/galeria7.webp" class="d-block w-100" alt="Baño de lujo" loading="lazy">
-          </div>
-          <div class="carousel-item">
-            <img src="images/galeria/galeria8.webp" class="d-block w-100" alt="suite doble" loading="lazy">
-        </div>
-        <div class="carousel-item">
-          <img src="images/galeria/galeria9.webp" class="d-block w-100" alt="sala con vistas exteriores" loading="lazy">
-      </div>
-      <div class="carousel-item">
-        <img src="images/galeria/galeria10.webp" class="d-block w-100" alt="libreria grande" loading="lazy">
-    </div><div class="carousel-item">
-      <img src="images/galeria/galeria11.webp" class="d-block w-100" alt="habitación grande" loading="lazy">
-  </div>
-  <div class="carousel-item">
-    <img src="images/galeria/galeria12.webp" class="d-block w-100" alt="zona social para grupo de gente" loading="lazy">
-</div>
-<div class="carousel-item">
-  <img src="images/galeria/galeria13.webp" class="d-block w-100" alt="celebración con piscina" loading="lazy">
-</div>
-              </div>
-              <!-- Controles -->
-              <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next" href="#galleryCarousel" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- CSS dentro del HTML -->
-<style>
-  .carousel {
-      width: 100%;
-      max-width: 360px;
-      margin: auto;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .carousel img {
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      padding: 10px;
-  }
-
-  .reservation-disponibility-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-  }
-
-  .content-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      width: 100%;
-      max-width: 1000px;
-  }
-
-  .info-section {
-      flex: 1;
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-  }
-
-  .reservation {
-      flex: 1;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .form-group {
-      margin-bottom: 15px;
-  }
-
-  input, textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-  }
-
-  .group-quantities {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-  }
-
-  .quantity-box {
-      flex: 1;
-      min-width: 120px;
-  }
-
-  button {
-      background: #28a745;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  }
-
-  button:hover {
-      background: #218838;
-  }
-
-  @media (max-width: 768px) {
-      .content-container {
-          flex-direction: column;
-      }
-  }
-</style>
-
+                  
+        
 <!-- Script de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </div>

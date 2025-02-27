@@ -538,13 +538,17 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
       }
       
       /* Ajustar el iframe para ocupar la mitad de la pantalla */
-      .calendar-container iframe {
-          width: 300px;
-          height: 30vh; /* La mitad de la pantalla */
-          border-radius: 10px;
+      /* Ajustar el iframe para ocupar la mitad de la pantalla */
+.calendar-container iframe {
+    width: 100%; /* Cambiar a 100% para adaptarse al contenedor */
+    height: 40vh; /* Aumentar la altura para evitar recorte */
+    min-height: 300px; /* Asegurar un mínimo de altura en pantallas pequeñas */
+    border-radius: 10px;
+}/* La mitad de la pantalla */
+        
 
 
-      }
+
       
       /* Ajustar el formulario */
       .reservation-disponibility-container {
